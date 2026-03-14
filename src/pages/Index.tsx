@@ -70,7 +70,7 @@ const Index = () => {
               color={game.color}
               level={game.level}
               index={i}
-              onClick={() => setActiveGame(game)}
+              onClick={() => navigate(`/${game.id}`)}
             />
           ))}
         </div>
