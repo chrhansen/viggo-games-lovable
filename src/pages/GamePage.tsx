@@ -63,7 +63,7 @@ const GamePage = () => {
       <AlertDialog open={showExitDialog} onOpenChange={setShowExitDialog}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Do you want to exit the game?</AlertDialogTitle>
+            <AlertDialogTitle>Do you want to exit {game.title}?</AlertDialogTitle>
             <AlertDialogDescription>
               You will return to the main page.
             </AlertDialogDescription>
