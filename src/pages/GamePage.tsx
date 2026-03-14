@@ -30,35 +30,24 @@ const GamePage = () => {
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      className="fixed inset-0 flex flex-col bg-background p-4 md:p-8"
-    >
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => navigate("/")}
-            className="h-10 w-10 rounded-full bg-card border border-foreground/10 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-          </motion.button>
-          <h2 className="text-xl font-bold font-display text-foreground">{game.title}</h2>
-        </div>
-      </div>
-
-      <div className="flex-1 rounded-[20px] overflow-hidden border border-foreground/10 bg-card">
-        <iframe
-          src={game.url}
-          title={game.title}
-          className="w-full h-full border-0"
-          allow="autoplay; fullscreen"
-        />
-      </div>
-    </motion.div>
+    <div className="fixed inset-0 bg-background">
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={() => navigate("/")}
+        className="absolute top-4 left-4 z-10 h-10 w-10 rounded-full bg-card/80 backdrop-blur border border-foreground/10 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <ArrowLeft className="w-5 h-5" />
+      </motion.button>
+      <iframe
+        src={game.url}
+        title={game.title}
+        className="w-full h-full border-0"
+        allow="autoplay; fullscreen"
+      />
+    </div>
   );
 };
 
