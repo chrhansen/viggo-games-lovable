@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Github } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import viggoImg from "@/assets/viggo.png";
 
 const About = () => {
   const navigate = useNavigate();
