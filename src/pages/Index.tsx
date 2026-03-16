@@ -76,14 +76,22 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="text-center text-[10px] font-mono text-muted-foreground uppercase tracking-widest mt-12"
+          className="text-center text-[10px] font-mono text-muted-foreground uppercase tracking-widest mt-12 space-y-2"
         >
-          Insert Coin · High Score: 0000
-        </motion.p>
+          <p>Insert Coin · High Score: 0000</p>
+          <p>
+            <button
+              onClick={() => navigate("/about")}
+              className="hover:text-primary transition-colors underline underline-offset-4"
+            >
+              About
+            </button>
+          </p>
+        </motion.div>
       </motion.div>
     </div>
   );
