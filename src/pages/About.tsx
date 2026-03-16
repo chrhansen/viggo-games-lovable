@@ -30,12 +30,18 @@ const About = () => {
         </h1>
 
         <div className="space-y-6 text-foreground/80 font-mono text-sm leading-relaxed">
+          <img
+            src={viggoImg}
+            alt="Viggo, the creator of viggo.games"
+            className="w-32 h-32 rounded-xl object-cover border-2 border-border shadow-md"
+          />
+
           <p>
             <span className="text-primary font-bold">VIGGO.GAMES</span> is a collection of browser games made by Viggo — built for fun, learning, and a bit of arcade nostalgia.
           </p>
 
           <p>
-            All games on this site are designed and developed by Viggo with a little help from family and friends.
+            All games on this site are designed and developed by Viggo with a little help from his dad (and codex).
           </p>
 
           <p>
