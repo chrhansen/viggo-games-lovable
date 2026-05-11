@@ -87,14 +87,12 @@ const Index = () => {
           className="text-center text-[10px] font-mono text-muted-foreground uppercase tracking-widest mt-12 space-y-2"
         >
           <p>Insert Coin · High Score: 0000</p>
-          <p>
-            <button
-              onClick={() => navigate("/about")}
-              className="hover:text-primary transition-colors underline underline-offset-4"
-            >
-              About
-            </button>
-          </p>
+          <button
+            onClick={() => navigate("/about")}
+            className="inline-block mt-2 px-6 py-2.5 text-xs font-mono uppercase tracking-widest border-2 border-primary text-primary rounded-md bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-colors shadow-[0_0_12px_hsl(var(--primary)/0.4)]"
+          >
+            About
+          </button>
         </motion.div>
       </motion.div>
     </div>
