@@ -53,6 +53,7 @@ export default {
         },
         chicken: "hsl(var(--chicken))",
         hunter: "hsl(var(--hunter))",
+        tagline: "hsl(var(--tagline))",
       },
       borderRadius: {
         lg: "var(--radius)",
