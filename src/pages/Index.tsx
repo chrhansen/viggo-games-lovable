@@ -11,6 +11,7 @@ interface Game {
   color: string;
   level: string;
   url: string;
+  tagline: string;
 }
 
 const games: Game[] = [
@@ -21,6 +22,7 @@ const games: Game[] = [
     color: "#FF4B4B",
     level: "Level 01",
     url: "", // Add the game URL here
+    tagline: "Why did the chicken cross the road? To hop, obviously.",
   },
   {
     id: "hunter-guy",
@@ -29,6 +31,7 @@ const games: Game[] = [
     color: "#22C55E",
     level: "Level 02",
     url: "", // Add the game URL here
+    tagline: "He hunts. He's a guy. The name checks out.",
   },
 ];
 
@@ -69,6 +72,7 @@ const Index = () => {
               image={game.image}
               color={game.color}
               level={game.level}
+              tagline={game.tagline}
               index={i}
               onClick={() => navigate(`/${game.id}`)}
             />
