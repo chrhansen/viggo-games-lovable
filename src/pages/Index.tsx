@@ -22,7 +22,7 @@ const games: Game[] = [
     color: "#FF4B4B",
     level: "Level 01",
     url: "", // Add the game URL here
-    tagline: "Why did the chicken cross the road? To hop, obviously.",
+    tagline: "Why did the chicken hop the road? To get to the other slide!",
   },
   {
     id: "hunter-guy",
@@ -31,7 +31,7 @@ const games: Game[] = [
     color: "#22C55E",
     level: "Level 02",
     url: "", // Add the game URL here
-    tagline: "He hunts. He's a guy. The name checks out.",
+    tagline: "What did the hunter say to his snack? Nice to meat you!",
   },
 ];
 
