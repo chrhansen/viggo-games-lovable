@@ -39,7 +39,7 @@ const ArcadeCard = ({ title, image, color, level, tagline, index, onClick }: Arc
             {level}
           </span>
           <h2 className="text-2xl font-bold font-display text-foreground">{title}</h2>
-          <p className="text-xs text-muted-foreground italic mt-1 max-w-[200px]">{tagline}</p>
+          <p className="text-xs text-muted-foreground mt-1 max-w-[200px]">{tagline}</p>
         </div>
         <div className="h-12 w-12 rounded-full bg-foreground/5 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
           <Play className="w-5 h-5 text-foreground group-hover:text-primary-foreground transition-colors duration-300" />
