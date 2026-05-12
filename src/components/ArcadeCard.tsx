@@ -38,7 +38,7 @@ const ArcadeCard = ({ title, image, color, level, tagline, index, onClick }: Arc
           <span className="text-[8px] md:text-[10px] font-mono text-muted-foreground uppercase tracking-widest">
             {level}
           </span>
-          <h2 className="text-base md:text-2xl font-bold font-display text-title leading-tight">{title}</h2>
+          <h2 className="text-base md:text-2xl font-bold font-display text-foreground leading-tight">{title}</h2>
           <p className="text-[10px] md:text-xs text-tagline mt-1 max-w-[200px]">{tagline}</p>
         </div>
         <div className="h-8 w-8 md:h-12 md:w-12 shrink-0 rounded-full bg-foreground/5 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
